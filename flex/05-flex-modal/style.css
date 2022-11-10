@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');*/
 
 html, body {
   height: 100%;
@@ -18,14 +18,18 @@ body {
 .modal {
   background: white;
   width: 480px;
+  padding: 12px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
+  text-align: center;
   background: lavender;
   width: 42px;
   height: 42px;
@@ -33,6 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  margin-right: 15px;
 }
 
 .close-button {
@@ -46,11 +52,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
+  
 }
 
 button {
   padding: 8px 16px;
   border-radius: 8px;
+}
+
+.text-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons {
+
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
 }
 
 button.continue {
@@ -59,8 +80,20 @@ button.continue {
   color: white;
 }
 
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
 button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+#boldedMsg {
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
 }
